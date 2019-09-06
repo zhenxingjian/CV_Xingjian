@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1564384591 "CV.tex" "CV.pdf" "CV" 1564384592
+["pdflatex"] 1567777404 "CV.tex" "CV.pdf" "CV" 1567777405
   "/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty" 1480098815 1458 43ab4710dc82f3edeabecd0d099626b2 ""
   "/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty" 1480098815 8237 3b62ef1f7e2c23a328c814b3893bc11f ""
   "/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty" 1490564930 185082 1fb09d7d24834377f95006300bc91fd2 ""
@@ -21,7 +21,7 @@
   "/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty" 1480098836 9581 023642318cef9f4677efe364de1e2a27 ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty" 1480098842 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "CV.aux" 1543252149 8 a94a2480d3289e625eea47cd1b285758 ""
-  "CV.tex" 1564384513 8423 e8484ecaa61665a6d32c6f2c5cae80f0 ""
+  "CV.tex" 1567777404 7776 8a593ce07d5ac7f7c8557dd7cbb92a26 ""
   "res.cls" 1543252168 25878 bd8ff28a278a3bd54d5ed5533f5eef28 ""
   (generated)
   "CV.log"

@@ -36,6 +36,7 @@
                 \item Rudrasis Chakraborty, \textbf{Xingjian Zhen}, Chun-Hao Yang, Monami Banerjee, Derek Archer, David Vaillancourt, Vikas Singh, Baba C. Vemuri. ``A Statistical Recurrent Model on the Manifold of Symmetric Positive Definite Matrices.''  In \emph{Thirty-second Conference on Neural Information Processing Systems (NeurIPS), 2018}
                 \item \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Nicholas Vogt, Seong Jae Hwang, Sterling C. Johnson, Barbara Bendlin, Vikas Singh. ``Group Analysis for PiB Status with Seqential Deep Learning Model on DTI.'' \emph{Alzheimer's Association International Conference (AAIC), 2019}
                 \item \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Nicholas Vogt, Barbara Bendlin, Vikas Singh. ``Dilated Convolutional Neural Networks (DCNN) for Sequential Manifold-valued Data in Neuroimaging.'' \emph{IEEE International Conference on Computer Vision (ICCV), 2019}
+                \item \textbf{Xingjian Zhen}, Han Yang, Ying Chi, Lei Zhang, Xiansheng Hua. ``CPR-GCN: Conditional Partial-Residual Graph Convolutional Network in Automated Anatomical Labeling of Coronary Arteries.'' \emph{In submission} 
                 \end{itemize}
 
 \section{RESEARCH \\ EXPERIENCES}
@@ -82,28 +83,19 @@
                  \item Used the bidirectional RNN method to achieve the state of the art, with MXNet as the core of the deep-learning system
                  \item Tested in multiple databases such as the NIST Special Database 2 and got a high accuracy rate
                  \end{itemize}
-                
-                \textbf{Emotion Detection in Voice Recordings}\hfill 07/2016-08/2016 
-                % Advisor: Prof. Christian Poellabauer, Dept. of Computer Science and Engineering, Univ. of Notre Dame
-                \begin{itemize}\itemsep -2.2pt %reduce space between items
-                 \item Used different classifiers to predict the emotion of a speaker in a voice memo 
-                 \item Extracted voice features like MFCC, LPCC, Zero Cross Rate, etc., from FAU Aibo Emotion Corpus dataset
-                 \item Trained both an SVM and a neural network using the features, tested them, and compared their accuracy with the state-of-the-art
-                 % \item Both the SVM and the neural network methods reached the state-of-the-art performance in the Interspeech 2009 Emotion Challenge
-                 \end{itemize}
 
 \section{INTERN \\ EXPERIENCES}
                 \textbf{DAMO Academy, Alibaba}\hfill 05/2019-09/2019
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
                  \item Research intern in DAMO Academy Medical AI Algorithm Research, Alibaba
-                 \item Developed an automated anatomical labeling of coronary arteries via graph neural networks
-                 \item Used 3D-CNN with LSTM model to extract the features from the CT images along vessels
-                 \item Used both image domain and position information to classify the coronary arteries and achieved 93\% accuracy on the test set
+                 \item Developed an automated anatomical labeling of coronary arteries via CPR-GCN
+                 \item Used 3D-CNN with BiLSTM to extract the features from the CT images along branches
+                 \item Used both image domain and position information with the partial-residual connection to achieve 95.8\% mean recall
                  \end{itemize}
 \section{COMPUTER \\ SKILLS} 
+Deep learning framework: PyTorch, TensorFlow\\
 Languages: Python, C++, Matlab \\
-Softwares: Visual Studio, Matlab \\
-Deep learning framework: PyTorch, TensorFlow
+Softwares: Visual Studio, Matlab 
 
 
 
