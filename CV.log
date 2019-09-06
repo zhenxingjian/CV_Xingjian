@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.11.11)  6 SEP 2019 21:43
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.11.11)  6 SEP 2019 21:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -221,7 +221,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 24.
 
-Overfull \hbox (7.63148pt too wide) in paragraph at lines 38--39
+Overfull \hbox (7.63148pt too wide) in paragraph at lines 39--40
 \TU/lmr/m/n/10 Singh. “Dilated Convolutional Neural Networks (DCNN) for Sequent
 ial Manifold-
  []
@@ -233,12 +233,12 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 103.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 103.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 104.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 104.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
  7986 strings out of 493005
@@ -247,6 +247,6 @@ Here is how much of TeX's memory you used:
  11968 multiletter control sequences out of 15000+600000
  4056 words of font info for 22 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 28i,8n,23p,695b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,8n,23p,695b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on CV.pdf (2 pages).
