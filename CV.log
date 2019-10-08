@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.11.11)  3 OCT 2019 13:43
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.11.11)  8 OCT 2019 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -241,6 +241,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 26.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 26.
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
@@ -256,12 +260,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 105.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
  ) 
 Here is how much of TeX's memory you used:
- 8598 strings out of 493005
- 120462 string characters out of 6134595
+ 8624 strings out of 493005
+ 120901 string characters out of 6134595
  202941 words of memory out of 5000000
- 12569 multiletter control sequences out of 15000+600000
- 4056 words of font info for 22 fonts, out of 8000000 for 9000
+ 12581 multiletter control sequences out of 15000+600000
+ 5911 words of font info for 32 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 28i,8n,35p,675b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,8n,35p,675b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on CV.pdf (2 pages).
