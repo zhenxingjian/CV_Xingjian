@@ -36,6 +36,7 @@
 
 \section{Paper}
                 \begin{itemize}\itemsep -2.2pt
+                \item Liu Yang, \textbf{Xingjian Zhen$^*$}, Rudrasis Chakraborty$^*$, Vikas Singh. ``ManifoldGLOW: Extending Flow-based Generative Models to Manifolds.'' \emph{In submission} 
                 \item \textbf{Xingjian Zhen$^*$}, Han Yang$^*$, Ying Chi, Lei Zhang, Xiansheng Hua. ``CPR-GCN: Conditional Partial-Residual Graph Convolutional Network in Automated Anatomical Labeling of Coronary Arteries.'' \emph{In submission} 
                 \item \textbf{Xingjian Zhen$^*$}, Rudrasis Chakraborty$^*$, Nicholas Vogt, Barbara B. Bendlin, Vikas Singh. ``Dilated Convolutional Neural Networks for Sequential Manifold-valued Data.'' \emph{IEEE International Conference on Computer Vision (ICCV), 2019}
                 \item \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Nicholas Vogt, Seong Jae Hwang, Sterling C. Johnson, Barbara B. Bendlin, Vikas Singh. ``Sequential Deep Learning Algorithms Show Structural Connectivity Differences By Amyloid Status.'' \emph{Alzheimer's Association International Conference (AAIC), 2019}
@@ -43,20 +44,27 @@
                 \end{itemize}
 
 \section{RESEARCH \\ EXPERIENCES}
+                \textbf{Flow-based generative model for non-Euclidean data, manifold}\hfill 03/2019-09/2019
+                % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
+                \begin{itemize}\itemsep -2.2pt %reduce space between items
+                 \item Introduced three invertible layers whose determinant of Jacobian is simple
+                 \item Built the two-stream version of GLOW that can transfer information from one manifold to another
+                 \item Showed the ability to transfer DTI to corresponding ODF, and vice versa
+                 \end{itemize}
 
                 \textbf{Group Analysis for PiB Status with Seqential Deep Learning Model on DTI}\hfill 01/2019-03/2019
                 % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
                  \item Used Ants as registration tool to warp information from template space into subject space 
-                 \item Extracted each voxel along each fiber bundles in DTI space to fit the sequential model
+                 \item Extracted voxels along each fiber bundles in DTI to fit the sequential model
                  \item With PiB status as group, found 2 fiber bundles satisfying significance level
                  \end{itemize}
 
                 \textbf{Dilated CNN in Group Analysis of Alzheimer's Disease} \hfill 08/2018-12/2018
                 % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
-                 \item Pre-processed the dMRI to extract the information of fiber bundles
-                 \item Applied SPD/ODF Manifold into Dilated CNN model to directly extract information from DTI/ODF
+                 % \item Pre-processed the dMRI to extract the information of fiber bundles
+                 \item Applied SPD/ODF Manifold into Dilated CNN model to directly extract information from DTI/ ODF
                  \item Speed up the training and testing model with competitive number of parameters with the state of the art 
                  \item With CSF and APOE biomarkers, got statistically signiﬁcant results on several fiber bundles
                  \end{itemize}
@@ -77,14 +85,6 @@
                  \item Applied the word2vec method on text as the representive of sentence
                  \item Used t-SNE to minimum the KL divergence between latent space and the Image-Text pair
                  \item Got meaningful result for the local dataset
-                 \end{itemize}
-
-                \textbf{Form Line Detection in the Picture}\hfill 12/2016-06/2017
-                % Advisor: Prof. Liangrui Peng, Dept. of Electronic Engineering, Tsinghua Univ.
-                \begin{itemize}\itemsep -2.2pt %reduce space between items
-                 \item Developed a system that detects and recognizes the form lines in pictures
-                 \item Used the bidirectional RNN method to achieve the state of the art, with MXNet as the core of the deep-learning system
-                 \item Tested in multiple databases such as the NIST Special Database 2 and got a high accuracy rate
                  \end{itemize}
 
 \section{INTERN \\ EXPERIENCES}
