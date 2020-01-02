@@ -27,7 +27,8 @@
 
 \begin{resume}
 \section{RESEARCH \\ INTERESTS}
-                My research interest is about different structured data for medical application in Computer Vision. Since it’s quite mature for Euclidean space machine learning, I would like to explore some different structured data or constrained data. For example, the Symmetric Positive Definite matrix in medical data (DTI) or covariance matrix are the data with constraint. I want to try some neural networks in Euclidean space, and extend them to the structured data, manifold data as an example, to do the classification or regression. I believe this will be useful in diagnosis from a medical perspective or analysis of the video/image information.
+                My research interest is about structured data or high-order features in Computer Vision. Since it's quite mature for Euclidean space deep learning, I would like to explore some different structured data or constrained data. The covariance matrices of the feature vectors can be viewed as the second-order features. Those high-order features are constrained by their own structure, i.e., Symmetric Positive Deﬁnite. Thus this will break the basic rules in Euclidean space. But those matrices are more robust to noise and contain more high-level information. I want to try some neural networks in Euclidean space, and extend them to those structured data.
+
 \section{EDUCATION} 
                 {\sl {Ph.D. Student}}, Department of Computer Science \hfill August 2017 - present\\
                 UW-Madison, WI, U.S. \\
@@ -49,29 +50,29 @@
                 \end{itemize}
 
 \section{RESEARCH \\ EXPERIENCES}
-                \textbf{Flow-based generative model for non-Euclidean data, manifold}\hfill 03/2019-09/2019
+                \textbf{Flow-based generative model for non-Euclidean data}\hfill 03/2019-12/2019
                 % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
                  \item Introduced three invertible layers whose determinant of Jacobian is simple
                  \item Built the two-stream version of GLOW that can transfer information from one manifold to another
                  \item Showed the ability to transfer DTI to corresponding ODF, and vice versa
+                 \item Generated texture images based on the covariance matrices
                  \end{itemize}
 
-                \textbf{Group Analysis for PiB Status with Seqential Deep Learning Model on DTI}\hfill 01/2019-03/2019
+                \textbf{Point cloud completion}\hfill 09/2019-11/2019
                 % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
-                 \item Used Ants as registration tool to warp information from template space into subject space 
-                 \item Extracted voxels along each fiber bundles in DTI to fit the sequential model
-                 \item With PiB status as group, found 2 fiber bundles satisfying significance level
+                 \item Used encoder-decoder based network to roughly complete the point cloud
+                 \item Found nearest neighbor in the training dataset to extract local information
                  \end{itemize}
 
-                \textbf{Dilated CNN in Group Analysis of Alzheimer's Disease} \hfill 08/2018-12/2018
+                \textbf{Dilated CNN in Group Analysis of Alzheimer's Disease} \hfill 08/2018-03/2019
                 % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
                  % \item Pre-processed the dMRI to extract the information of fiber bundles
                  \item Applied SPD/ODF Manifold into Dilated CNN model to directly extract information from DTI/ ODF
                  \item Speed up the training and testing model with competitive number of parameters with the state of the art 
-                 \item With CSF and APOE biomarkers, got statistically signiﬁcant results on several fiber bundles
+                 \item With PiB and APOE biomarkers, got statistically signiﬁcant results on several fiber bundles
                  \end{itemize}
 
                  \textbf{Statistical Recurrent Model on the Manifold}\hfill 01/2018-05/2018
