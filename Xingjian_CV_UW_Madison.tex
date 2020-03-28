@@ -1,0 +1,153 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+\makeatletter
+\def\@classoptionslist{<class options except `margin` OR empty>}
+\makeatother
+
+\usepackage{geometry}
+\geometry{left=1cm,right=1cm,top=2cm,bottom=2cm}
+
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\setlength{\textwidth}{6.3in} % set width of text portion
+% \usepackage [colorlinks,linkcolor=blue,anchorcolor=blue,citecolor=green]{hyperref}
+\renewcommand{\baselinestretch}{1.2} 
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{array}
+% \usepackage{setspace}
+% \usepackage{parskip} % This package makes the spacing to be wider. -Qi
+\begin{document}
+
+
+% Center the name over the entire width of resume:
+ \moveleft.45\hoffset\centerline{\large\bf Xingjian Zhen}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ % \moveleft.45\hoffset\centerline{Department of Computer Science, University of Wisconsin-Madison}
+ % \moveleft.45\hoffset\centerline{5770B Medical Science Center. Madison, WI, 53705}
+ % \moveleft.45\hoffset\centerline{\href{mailto:xzhen3@wisc.edu}{xzhen3@wisc.edu}}
+ % \moveleft.45\hoffset\centerline{\href{https://zhenxingjian.github.io/homepage/}{\textcolor{blue}{[Homepage]\footnote{\url{https://zhenxingjian.github.io/homepage/}}}} \href{https://github.com/zhenxingjian}{\textcolor{blue}{[Github]\footnote{\url{https://github.com/zhenxingjian}}}}}
+
+\moveleft1.06\hoffset\vbox{
+\begin{tabular}{p{0.5\resumewidth}>{\raggedleft\arraybackslash}p{0.477\resumewidth}}
+    5770B Medical Science Center & \href{mailto:xzhen3@wisc.edu}{xzhen3@wisc.edu}\\
+    1300 University Ave. & \\
+    Madison, WI, USA 53706-1510 & \href{https://zhenxingjian.github.io/homepage/}{\textcolor{blue}{[Homepage]\footnotemark[1]}} \href{https://github.com/zhenxingjian}{\textcolor{blue}{[Github]\footnotemark[2]}}
+\end{tabular}
+}
+
+\footnotetext[1]{\url{https://zhenxingjian.github.io/homepage/}}
+\footnotetext[2]{\url{https://github.com/zhenxingjian}}
+
+\begin{resume}
+\section{RESEARCH \\ INTEREST}
+                My research interest is about structured data or high-order features in Computer Vision. Since it's quite mature for Euclidean space deep learning, I would like to explore some different structured data or constrained data. The covariance matrices of the feature vectors can be viewed as the second-order features. Those high-order features are constrained by their own structure, i.e., Symmetric Positive Definite. Thus this will break the basic rules in Euclidean space. But those matrices are more robust to noise and contain more high-level information. I want to try some neural networks in Euclidean space, and extend them to those structured data.
+
+\section{EDUCATION} 
+                {\sl {Ph.D. Student}}, Department of Computer Science \hfill 2017 - 2022(Expected)\\
+                {\bf Supervisor:} Vikas Singh\\
+                {\bf University of Wisconsin-Madison}, WI, U.S. \hfill GPA 3.83/ 4.0\\
+                {\sl {B.E.}}, Department of Electronic Engineering \hfill 2013 - 2017\\
+                {\bf Tsinghua University}, Beijing, P.R. China. \hfill GPA 90.9/100
+                
+\section{PUBLICATIONS}
+                \begin{itemize}[noitemsep,wide=0pt,leftmargin=\dimexpr\labelwidth + 2\labelsep\relax]\itemsep -0.0pt
+                \item \textbf{[\emph{In submission}]} ``ManifoldGLOW: Extending Flow-based Generative Models to Manifolds.''\\
+                            \textbf{Xingjian Zhen}, Liu Yang,  Rudrasis Chakraborty, Vikas Singh.   
+                \item \textbf{[\emph{CVPR \textcolor{red}{(Oral)}, 2020}]} ``CPR-GCN: Conditional Partial-Residual Graph Convolutional Network in Automated Anatomical Labeling of Coronary Arteries.''\\
+                            \textbf{Xingjian Zhen}, Han Yang, Ying Chi, Lei Zhang, Xiansheng Hua.   
+                \item \textbf{[\emph{ICCV, 2019}]} ``Dilated Convolutional Neural Networks for Sequential Manifold-valued Data.'' \\
+                             \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Nicholas Vogt, Barbara B. Bendlin, Vikas Singh. 
+                \item \textbf{[\emph{AAIC, 2019}]} ``Sequential Deep Learning Algorithms Show Structural Connectivity Differences By Amyloid Status.''\\
+                             \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Nicholas Vogt, Seong Jae Hwang, Sterling C. Johnson, Barbara B. Bendlin, Vikas Singh. 
+                \item \textbf{[\emph{NeurIPS, 2018}]} ``A Statistical Recurrent Model on the Manifold of Symmetric Positive Definite Matrices.''\\
+                             Rudrasis Chakraborty, \textbf{Xingjian Zhen}, Chun-Hao Yang, Monami Banerjee, Derek Archer, David Vaillancourt, Vikas Singh, Baba C. Vemuri.
+                \end{itemize}
+
+\section{INTERN \\ EXPERIENCE}
+                \textbf{DAMO Academy, Alibaba}\hfill 05/2019-09/2019\\
+                \textbf{Mentor:} Ying Chi\\
+                \textbf{Title:} Research Intern
+                \begin{itemize}\itemsep -2.2pt %reduce space between items
+                 % \item[-] Research intern in DAMO Academy Medical AI Algorithm Research, Alibaba
+                 \item[-] Developed automated anatomical labeling of coronary arteries via CPR-GCN
+                 \item[-] Used 3D CNN with BiLSTM to extract the features from the CT images along branches
+                 \item[-] Combined both image domain and position information with the partial-residual connection to achieve 95.8\% mean recall
+                 \end{itemize}
+
+\section{RESEARCH \\ EXPERIENCES}
+                \textbf{Certified Robustness Training via Gaussian Distribution}\hfill 01/2020-current
+                % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
+                \begin{itemize}\itemsep -2.2pt %reduce space between items
+                 \item[-] Applied the certifiable randomized smoothing robustness without sampling on ResNet
+                 \item[-] Proposed a tight estimation of the channel wise Gaussian distribution
+                 \item[-] Achieved high certified accuracy as well as a larger certified radius on Cifar-10 and SVHN
+                 \end{itemize}
+
+                \textbf{Flow-based Generative Model for Non-Euclidean Data}\hfill 03/2019-12/2019
+                % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
+                \begin{itemize}\itemsep -2.2pt %reduce space between items
+                 \item[-] Introduced three invertible layers whose determinant of Jacobian is simple
+                 \item[-] Built the two-stream version of GLOW that can transfer information from one manifold to another
+                 \item[-] Transferred DTI to corresponding ODF, and vice versa, with a small reconstruction error as well as maintaining verifiable group differences
+                 \item[-] Generated/ Mixed texture images based on the local covariance matrices
+                 \end{itemize}
+
+                \textbf{Point Cloud Completion}\hfill 09/2019-11/2019
+                % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
+                \begin{itemize}\itemsep -2.2pt %reduce space between items
+                 \item[-] Used the encoder-decoder based network to roughly complete the point cloud
+                 \item[-] Utilized the nearest neighbor in the training dataset to extract local information
+                 \end{itemize}
+
+                \textbf{Dilated CNN in Group Analysis of Alzheimer's Disease} \hfill 08/2018-03/2019
+                % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
+                \begin{itemize}\itemsep -2.2pt %reduce space between items
+                 \item[-] Pre-processed the dMRI to extract the centerline/ average values along fiber bundles
+                 \item[-] Applied SPD/ $S^n$ manifold into the Dilated CNN model to extract information from DTI/ ODF
+                 \item[-] Sped up the training and testing phases with a competitive number of parameters with the state of the art model
+                 \item[-] Got statistically significant differences on several fiber bundles, with PiB and APOE biomarkers
+                 \end{itemize}
+
+                 \textbf{Statistical Recurrent Model on the Manifold} \hfill 01/2018-05/2018
+                % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
+                \begin{itemize}\itemsep -2.2pt %reduce space between items
+                 \item[-] Defined the ``$+/\ \times$'' operators in the manifold space
+                 \item[-] Modified the statistical recurrent model on the SPD manifold
+                 \item[-] Reduced the number of parameters of the video classification model significantly
+                 \item[-] Achieved the state of the art of accuracy in UCF11 dataset
+                 \end{itemize}
+
+                 \textbf{Correlations for Image-Text Pair in Latent Space} \hfill 09/2017-01/2018
+                \begin{itemize}\itemsep -2.2pt %reduce space between items
+                 \item[-] Applied the pre-trained CNN as the feature extractor from the image side 
+                 \item[-] Applied the word2vec method on the text as the representative of sentences
+                 \item[-] Used t-SNE to minimize the KL divergence between latent space and the Image-Text pair
+                 \item[-] Got meaningful result on the local dataset gathered from Reddit
+                 \end{itemize}
+
+                 \textbf{Form Line Detection in the Picture}\hfill 12/2016-06/2017
+                % Advisor: Prof. Liangrui Peng, Dept. of Electronic Engineering, Tsinghua Univ.
+                \begin{itemize}\itemsep -2.2pt %reduce space between items
+                 \item[-] Developed a system that detects and recognizes the form lines in pictures
+                 \item[-] Used the bidirectional RNN method to achieve the state of the art, with MXNet as the core of the deep-learning system 
+                 \item[-] Tested in multiple dataset such as the NIST Special Database 2 and got a high accuracy rate
+                 \end{itemize}
+
+
+\section{COMPUTER \\ SKILLS} 
+                Deep learning framework: PyTorch, TensorFlow, MXNet\\
+                Languages: Python, C++, Matlab, \LaTeX \\
+                Softwares: Visual Studio, Matlab 
+
+\section{REVIEWER \\ SERVICES}
+                MICCAI 2020, NeurIPS 2020
+
+\end{resume}
+\end{document}
+
