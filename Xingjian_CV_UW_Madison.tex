@@ -67,7 +67,7 @@
                             Zhichun Huang, Rudrasis Chakraborty, \textbf{Xingjian Zhen}, Vikas Singh.
                 \item \textbf{[\emph{In submission}]} ``Simpler Certified Radius Maximization by Propagating Covariances.''\\
                             \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Vikas Singh.
-                \item \textbf{[\emph{In submission}]} ``Flow-based Generative Models for Learning Manifold to Manifold Mappings.''\\
+                \item \textbf{[\emph{AAAI, 2021}]} ``Flow-based Generative Models for Learning Manifold to Manifold Mappings.''\\
                             \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Liu Yang, Vikas Singh.   
                 \item \textbf{[\emph{CVPR \textcolor{red}{(Oral)}, 2020}]} ``CPR-GCN: Conditional Partial-Residual Graph Convolutional Network in Automated Anatomical Labeling of Coronary Arteries.''\\
                             \textbf{Xingjian Zhen}, Han Yang, Ying Chi, Lei Zhang, Xian-Sheng Hua.   
@@ -85,9 +85,9 @@
                 \textbf{Mentor:} Karen Hovsepian, and Mingwei Shen\\
                 \textbf{Title:} Applied Scientist Intern
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
-                \item[-] Built an end-to-end three-modes model to generate answer, textual explanation, and visual saliency explanation. Got $1\%$ better answer accuracy, 0.283 Bleu-4 on textual explanation.
-                 \item[-] Collected a novel TextVQA-X dataset from public available TextVQA with extra textual explanation and visual explanation.
-                 \item[-] Introduced graph neural network and the noise augmentation to improve the robustness.
+                \item[-] Built an end-to-end three-modes model to generate answer, textual explanation, and visual saliency explanation with graph neural network and the noise augmentation to improve the robustness
+                \item[-] Got $1\%$ better answer accuracy, $7\%$ better textual explanation CIDEr, $2\%$ better visual explanation IoU
+                 \item[-] Collected a novel TextVQA-X dataset from public available TextVQA with extra textual and visual explanation
                  \end{itemize}
                  
                 \textbf{DAMO Academy, Alibaba}\hfill 05/2019-09/2019\\
@@ -97,7 +97,7 @@
                  % \item[-] Research intern in DAMO Academy Medical AI Algorithm Research, Alibaba
                  \item[-] Developed automated anatomical labeling of coronary arteries via CPR-GCN
                  \item[-] Used 3D CNN with BiLSTM to extract the features from the CT images along branches
-                 \item[-] Combined both image domain and position information with the partial-residual connection to achieve 95.8\% mean recall
+                 \item[-] Combined both image domain and position information with the partial-residual connection to achieve 95.8\% mean recall, $9\%$ improvement from baseline
                  \end{itemize}
 
 \vspace{-1em}
@@ -105,18 +105,18 @@
                 \textbf{Certified Robustness Training via Gaussian Distribution}\hfill 01/2020-current
                 % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
-                 \item[-] Applied the certifiable randomized smoothing robustness without sampling with $2\times$ faster
-                 \item[-] Proposed a tighter estimation of the channel wise Gaussian distribution
-                 \item[-] Achieved $5\%$ higher certified accuracy as well as a larger certified radius on Cifar-10 and SVHN
+                 \item[-] Applied the certifiable randomized smoothing robustness without sampling with $2\times$ to $5\times$ faster
+                 \item[-] Proposed a tight estimation of the channel-wise Gaussian distribution to reduce the cost from exponential to linear
+                 \item[-] Achieved $5\%$ better certified accuracy as well as a larger certified radius on ImageNet and Places365
                  \end{itemize}
 
                 \textbf{Flow-based Generative Model for Non-Euclidean Data}\hfill 03/2019-12/2019
                 % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
-                 \item[-] Introduced three invertible layers whose determinant of Jacobian is simple
-                 \item[-] Built the two-stream version of GLOW that can transfer information from one manifold to another
-                 \item[-] Transferred DTI to corresponding ODF, and vice versa, with a small reconstruction error as well as maintaining verifiable group differences with $p-$value $<0.001$
-                 \item[-] Generated/ Mixed texture images based on the local covariance matrices
+                 \item[-] Introduced three invertible layers on manifold-valued data whose determinant of Jacobian is simple
+                 \item[-] Built the two-stream GLOW that can transfer information from one manifold to another
+                 \item[-] Transferred DTI to corresponding ODF with a small reconstruction error and maintaining verifiable group differences with $p-$value $<0.001$\\ 
+                 In reality, this can save scanning time from $35$ mins to $7-9$ mins
                  \end{itemize}
 
 %                \textbf{Point Cloud Completion}\hfill 09/2019-11/2019
@@ -131,8 +131,8 @@
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
                  \item[-] Pre-processed the dMRI to extract the centerline/ average values along fiber bundles
                  \item[-] Applied SPD/ $S^n$ manifold into the Dilated CNN model to extract information from DTI/ ODF
-                 \item[-] Sped up the training and testing phases $5\times$ with a competitive number of parameters with the state of the art model
-                 \item[-] Got statistically significant differences on 5 fiber bundles, with PiB and APOE biomarkers
+                 \item[-] Sped up the training and testing $5\times$ with a competitive number of parameters with SoTA
+                 \item[-] Got statistically significant differences on 5 (out of 18) fiber bundles, by PiB and APOE biomarkers
                  \end{itemize}
 
                  \textbf{Statistical Recurrent Model on the Manifold} \hfill 01/2018-05/2018
@@ -163,8 +163,7 @@
 \vspace{-1em}
 \section{COMPUTER \\ SKILLS} 
                 Deep learning framework: PyTorch, TensorFlow, MXNet\\
-                Languages: Python, C++, Matlab, \LaTeX \\
-                Softwares: Visual Studio, Matlab 
+                Languages: Python, \LaTeX, Matlab, C++
 
 \vspace{-1em}
 \section{REVIEWER \\ SERVICES}
