@@ -10,4 +10,4 @@ I'm Xingjian Zhen, a PhD. student in the [Department of Computer Science](https:
 
 My research interest is Computer Vision, Deep learning, Differential Geometry, Statistics, and Neuroimaging. I am particularly interested in the application of deep learning in medical area.
 
-I have publication in NeurIPS, ICCV, CVPR, etc. Details can be found in my [google scholar page](https://scholar.google.com/citations?user=Ita37_cAAAAJ&hl=en). I'm open to any kinds of collaboration. Please feel free to contact me directly through [email](mailto:zhenxingjian1995@gmail.com): <zhenxingjian1995@gmail.com>.
+I have publication in NeurIPS, ICCV, CVPR, AAAI, etc. Details can be found in my [google scholar page](https://scholar.google.com/citations?user=Ita37_cAAAAJ&hl=en). I'm open to any kinds of collaboration. Please feel free to contact me directly through [email](mailto:zhenxingjian1995@gmail.com): <zhenxingjian1995@gmail.com>.
