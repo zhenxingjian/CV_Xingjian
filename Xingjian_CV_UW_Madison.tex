@@ -19,6 +19,10 @@
 \usepackage{array}
 % \usepackage{setspace}
 % \usepackage{parskip} % This package makes the spacing to be wider. -Qi
+
+
+\renewcommand\labelenumi{[\theenumi]}
+
 \begin{document}
 
 % Center the name over the entire width of resume:
@@ -59,8 +63,8 @@
 
 \vspace{-1em}                
 \section{PUBLICATIONS}
-                \begin{itemize}[noitemsep,wide=0pt,leftmargin=\dimexpr\labelwidth + 2\labelsep\relax]\itemsep -0.0pt
-                \item \textbf{[\emph{CVPR, 2021}]} ``Simpler Certified Radius Maximization by Propagating Covariances.''\\
+                \begin{enumerate}[noitemsep,wide=0pt,leftmargin=\dimexpr\labelwidth + 2\labelsep\relax]\itemsep -0.0pt
+                \item \textbf{[\emph{CVPR \textcolor{red}{(Oral)}, 2021}]} ``Simpler Certified Radius Maximization by Propagating Covariances.''\\
                             \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Vikas Singh.
                 \item \textbf{[\emph{AAAI, 2021}]} ``Flow-based Generative Models for Learning Manifold to Manifold Mappings.''\\
                             \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Liu Yang, Vikas Singh.   
@@ -72,18 +76,18 @@
                              \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Nicholas Vogt, Seong Jae Hwang, Sterling C. Johnson, Barbara B. Bendlin, Vikas Singh. 
                 \item \textbf{[\emph{NeurIPS, 2018}]} ``A Statistical Recurrent Model on the Manifold of Symmetric Positive Definite Matrices.''\\
                              Rudrasis Chakraborty, \textbf{Xingjian Zhen}, Chun-Hao Yang, Monami Banerjee, Derek Archer, David Vaillancourt, Vikas Singh, Baba C. Vemuri.
-                \end{itemize}
+                \end{enumerate}
 
 \vspace{-2em}                
 \section{UNDER\\ REVIEWING}
-				\begin{itemize}[noitemsep,wide=0pt,leftmargin=\dimexpr\labelwidth + 2\labelsep\relax]\itemsep -0.0pt
+				\begin{enumerate}[noitemsep,wide=0pt,leftmargin=\dimexpr\labelwidth + 2\labelsep\relax]\itemsep -0.0pt
 				\item \textbf{[\emph{In submission}]} ``Altered Structural Connectivity Detected with Dilated Convolutional Neural Network Analysis in the DIAN study and the Wisconsin Registry for Alzheimer's Prevention.''\\
                             \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Nicholas Vogt, Ruochen Wang, Kao Lee Yang, Nagesh Adluru, Brian Gordon, Tammie Benzinger, Nicole Mckay, Tobey Betthauser, Sterling C, Johnson, Vikas Singh, Barbara B. Bendlin
 %                \item \textbf{[\emph{In submission}]} ``A First Look: Towards Explainable TextVQA Models via Visual and Textual Explanations.''\\
 %                            \textbf{Xingjian Zhen}, Varun Nagaraj Rao, Karen Hovsepian, Mingwei Shen.
 %                \item \textbf{[\emph{In submission}]} ``Can Kernel Transfer Operators Help Flow based Generative Models?''\\
 %                            Zhichun Huang, Rudrasis Chakraborty, \textbf{Xingjian Zhen}, Vikas Singh.
-                \end{itemize}
+                \end{enumerate}
 
 \vspace{-1em}
 \section{INTERN \\ EXPERIENCE}
@@ -110,7 +114,7 @@
 
 \vspace{-1em}
 \section{RESEARCH \\ EXPERIENCES}
-                \textbf{Certified Robustness Training via Gaussian Distribution}\hfill 01/2020-current
+                \textbf{Certified Robustness Training via Gaussian Distribution}\hfill 01/2020-11/2020
                 % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
                  \item[-] Applied the certifiable randomized smoothing robustness without sampling with $2\times$ to $5\times$ faster
