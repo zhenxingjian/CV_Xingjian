@@ -1,5 +1,6 @@
 % LaTeX resume using res.cls
 \documentclass[margin]{res}
+\usepackage{CJKutf8}
 \makeatletter
 \def\@classoptionslist{<class options except `margin` OR empty>}
 \makeatother
@@ -19,14 +20,15 @@
 \usepackage{array}
 % \usepackage{setspace}
 % \usepackage{parskip} % This package makes the spacing to be wider. -Qi
-
+\usepackage{fontawesome}
 
 \renewcommand\labelenumi{[\theenumi]}
 
 \begin{document}
 
 % Center the name over the entire width of resume:
- \moveleft.45\hoffset\centerline{\large\bf Xingjian Zhen}
+% \moveleft.45\hoffset\centerline{\large\bf Xingjian Zhen (\begin{CJK*}{UTF8}{gbsn}甄\ 行践\end{CJK*})}
+\moveleft.45\hoffset\centerline{\large\bf Xingjian ZHEN}
 % Draw a horizontal line the whole width of resume:
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
 % address begins here
@@ -36,16 +38,24 @@
  % \moveleft.45\hoffset\centerline{\href{mailto:xzhen3@wisc.edu}{xzhen3@wisc.edu}}
  % \moveleft.45\hoffset\centerline{\href{https://zhenxingjian.github.io/homepage/}{\textcolor{blue}{[Homepage]\footnote{\url{https://zhenxingjian.github.io/homepage/}}}} \href{https://github.com/zhenxingjian}{\textcolor{blue}{[Github]\footnote{\url{https://github.com/zhenxingjian}}}}}
 
+%\moveleft1.06\hoffset\vbox{
+%\begin{tabular}{p{0.3\resumewidth}>{\raggedleft\arraybackslash}p{0.677\resumewidth}}
+%    5770B Medical Science Center & \href{mailto:xzhen3@wisc.edu}{\faEnvelope\ xzhen3@wisc.edu}\\
+%    1300 University Ave. & \faPhone\ (xxx)-xxx-xxxx\\
+%    Madison, WI, USA 53706-1510 & \href{https://zhenxingjian.github.io/homepage}{\faHome\ https://zhenxingjian.github.io/homepage}\\
+%    & \href{https://github.com/zhenxingjian}{\faGithub \ https://github.com/zhenxingjian}
+%\end{tabular}
+%}
+
 \moveleft1.06\hoffset\vbox{
-\begin{tabular}{p{0.5\resumewidth}>{\raggedleft\arraybackslash}p{0.477\resumewidth}}
-    5770B Medical Science Center & \href{mailto:xzhen3@wisc.edu}{xzhen3@wisc.edu}\\
-    1300 University Ave. & \\
-    Madison, WI, USA 53706-1510 & \href{https://zhenxingjian.github.io/homepage/}{\textcolor{blue}{[Homepage]\footnotemark[1]}} \href{https://github.com/zhenxingjian}{\textcolor{blue}{[Github]\footnotemark[2]}}
+\begin{tabular}{p{0.677\resumewidth}>{\raggedleft\arraybackslash}p{0.3\resumewidth}}
+    \href{mailto:xzhen3@wisc.edu}{\faEnvelope\ xzhen3@wisc.edu} & 5770B Medical Science Center \\
+    \faPhone\ (xxx)-xxx-xxxx & 1300 University Ave. \\
+    \href{https://zhenxingjian.github.io/homepage}{\faHome\ https://zhenxingjian.github.io/homepage} & Madison, WI, USA  \\
+    \href{https://github.com/zhenxingjian}{\faGithub \ https://github.com/zhenxingjian} & 53706-1510
 \end{tabular}
 }
 
-\footnotetext[1]{\url{https://zhenxingjian.github.io/homepage/}}
-\footnotetext[2]{\url{https://github.com/zhenxingjian}}
 
 \begin{resume}
 \vspace{-2em}
@@ -69,22 +79,23 @@
                 \item \textbf{[\emph{AAAI, 2021}]} ``Flow-based Generative Models for Learning Manifold to Manifold Mappings.''\\
                             \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Liu Yang, Vikas Singh.   
                 \item \textbf{[\emph{CVPR \textcolor{red}{(Oral)}, 2020}]} ``CPR-GCN: Conditional Partial-Residual Graph Convolutional Network in Automated Anatomical Labeling of Coronary Arteries.''\\
-                            \textbf{Xingjian Zhen}, Han Yang, Ying Chi, Lei Zhang, Xian-Sheng Hua.   
+                            \textbf{Xingjian Zhen}$^*$, Han Yang$^*$, Ying Chi, Lei Zhang, Xian-Sheng Hua.   
                 \item \textbf{[\emph{ICCV, 2019}]} ``Dilated Convolutional Neural Networks for Sequential Manifold-valued Data.'' \\
-                             \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Nicholas Vogt, Barbara B. Bendlin, Vikas Singh. 
+                             \textbf{Xingjian Zhen}$^*$, Rudrasis Chakraborty$^*$, Nicholas Vogt, Barbara B. Bendlin, Vikas Singh. 
                 \item \textbf{[\emph{AAIC, 2019}]} ``Sequential Deep Learning Algorithms Show Structural Connectivity Differences By Amyloid Status.''\\
                              \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Nicholas Vogt, Seong Jae Hwang, Sterling C. Johnson, Barbara B. Bendlin, Vikas Singh. 
                 \item \textbf{[\emph{NeurIPS, 2018}]} ``A Statistical Recurrent Model on the Manifold of Symmetric Positive Definite Matrices.''\\
-                             Rudrasis Chakraborty, \textbf{Xingjian Zhen}, Chun-Hao Yang, Monami Banerjee, Derek Archer, David Vaillancourt, Vikas Singh, Baba C. Vemuri.
+                             Rudrasis Chakraborty, \textbf{Xingjian Zhen}$^*$, Chun-Hao Yang$^*$, Monami Banerjee, Derek Archer, David Vaillancourt, Vikas Singh, Baba C. Vemuri.
                 \end{enumerate}
 
 \vspace{-2em}                
 \section{UNDER\\ REVIEWING}
 				\begin{enumerate}[noitemsep,wide=0pt,leftmargin=\dimexpr\labelwidth + 2\labelsep\relax]\itemsep -0.0pt
+				\setcounter{enumi}{6}
 				\item \textbf{[\emph{In submission}]} ``Altered Structural Connectivity Detected with Dilated Convolutional Neural Network Analysis in the DIAN study and the Wisconsin Registry for Alzheimer's Prevention.''\\
                             \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Nicholas Vogt, Ruochen Wang, Kao Lee Yang, Nagesh Adluru, Brian Gordon, Tammie Benzinger, Nicole Mckay, Tobey Betthauser, Sterling C, Johnson, Vikas Singh, Barbara B. Bendlin
-%                \item \textbf{[\emph{In submission}]} ``A First Look: Towards Explainable TextVQA Models via Visual and Textual Explanations.''\\
-%                            \textbf{Xingjian Zhen}, Varun Nagaraj Rao, Karen Hovsepian, Mingwei Shen.
+                \item \textbf{[\emph{In submission}]} ``A First Look: Towards Explainable TextVQA Models via Visual and Textual Explanations.''\\
+                            \textbf{Xingjian Zhen}$^*$, Varun Nagaraj Rao$^*$, Karen Hovsepian, Mingwei Shen.
 %                \item \textbf{[\emph{In submission}]} ``Can Kernel Transfer Operators Help Flow based Generative Models?''\\
 %                            Zhichun Huang, Rudrasis Chakraborty, \textbf{Xingjian Zhen}, Vikas Singh.
                 \end{enumerate}
@@ -142,7 +153,7 @@
 %                 \item[-] Utilized the nearest neighbor in the training dataset to extract local information
 %                 \end{itemize}
 
-                \textbf{Dilated CNN in Group Analysis of Alzheimer's Disease} \hfill 08/2018-03/2019
+                \textbf{Dilated CNN in Group Analysis of Alzheimer's Disease} \hfill 08/2018-02/2021
                 % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
                  \item[-] Pre-processed the dMRI to extract the centerline/ average values along fiber bundles
