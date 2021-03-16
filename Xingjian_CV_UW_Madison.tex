@@ -21,6 +21,7 @@
 % \usepackage{setspace}
 % \usepackage{parskip} % This package makes the spacing to be wider. -Qi
 \usepackage{fontawesome}
+\usepackage{cleveref}
 
 \renewcommand\labelenumi{[\theenumi]}
 
@@ -75,9 +76,9 @@
 \section{PUBLICATIONS}
                 \begin{enumerate}[noitemsep,wide=0pt,leftmargin=\dimexpr\labelwidth + 2\labelsep\relax]\itemsep -0.0pt
                 \item \textbf{[\emph{CVPR \textcolor{red}{(Oral)}, 2021}]} ``Simpler Certified Radius Maximization by Propagating Covariances.''\\
-                            \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Vikas Singh.
+                            \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Vikas Singh. 
                 \item \textbf{[\emph{AAAI, 2021}]} ``Flow-based Generative Models for Learning Manifold to Manifold Mappings.''\\
-                            \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Liu Yang, Vikas Singh.   
+                            \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Liu Yang, Vikas Singh. 
                 \item \textbf{[\emph{CVPR \textcolor{red}{(Oral)}, 2020}]} ``CPR-GCN: Conditional Partial-Residual Graph Convolutional Network in Automated Anatomical Labeling of Coronary Arteries.''\\
                             \textbf{Xingjian Zhen}$^*$, Han Yang$^*$, Ying Chi, Lei Zhang, Xian-Sheng Hua.   
                 \item \textbf{[\emph{ICCV, 2019}]} ``Dilated Convolutional Neural Networks for Sequential Manifold-valued Data.'' \\
@@ -102,25 +103,27 @@
 
 \vspace{-1em}
 \section{INTERN \\ EXPERIENCE}
-                \textbf{Amazon}\hfill 05/2020-09/2019\\
-                \textbf{Mentor:} Karen Hovsepian, and Mingwei Shen\\
-                \textbf{Title:} Applied Scientist Intern
+                \textbf{Amazon}, Seattle, WA, U.S. - {\it Applied Scientist Intern}\hfill 05/2020-09/2020\\
+                \textbf{Mentor:} Karen Hovsepian, and Mingwei Shen
+%                \textbf{Title:} Applied Scientist Intern
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
                 \item[-] Built an end-to-end three-modes model to generate answer, textual explanation, and visual saliency explanation with graph neural network and the noise augmentation to improve the robustness
                 \item[-] Got $1\%$ better accuracy, $7\%$ better textual explanation CIDEr, $2\%$ better visual explanation IoU
                  \item[-] Collected a novel TextVQA-X dataset from public available TextVQA with extra textual and visual explanation
+                 \item[-] Wrote the paper [8], which got oral presentation in the inner conference. 
                  \end{itemize}
                 
                 \vspace{-1em}  
                 
-                \textbf{DAMO Academy, Alibaba}\hfill 05/2019-09/2019\\
-                \textbf{Mentor:} Ying Chi\\
-                \textbf{Title:} Research Intern
+                \textbf{DAMO Academy, Alibaba}, Beijing, China. - {\it Research Intern}\hfill 05/2019-09/2019\\
+                \textbf{Mentor:} Ying Chi
+%                \textbf{Title:} Research Intern
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
                  % \item[-] Research intern in DAMO Academy Medical AI Algorithm Research, Alibaba
                  \item[-] Developed automated anatomical labeling of coronary arteries via CPR-GCN
                  \item[-] Used 3D CNN with BiLSTM to extract the features from the CT images along branches
                  \item[-] Combined both image domain and position information with the partial-residual connection to achieve $95.8\%$ mean recall, $9\%$ improvement from baseline
+                 \item[-] Published paper [3] with oral presentation in CVPR 2020 ($5.7\%$ acceptance rate)
                  \end{itemize}
 
 \vspace{-1em}
@@ -131,6 +134,7 @@
                  \item[-] Applied the certifiable randomized smoothing robustness without sampling with $2\times$ to $5\times$ faster
                  \item[-] Proposed a tight estimation of the channel-wise Gaussian distribution to reduce the cost from exponential to linear
                  \item[-] Achieved $5\%$ better certified accuracy as well as a larger certified radius on ImageNet and Places365
+                 \item[-] Published paper [1] with oral presentation in CVPR 2021 ($4.6\%$ acceptance rate)
                  \end{itemize}
 
                  \vspace{-1em}  
@@ -140,8 +144,9 @@
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
                  \item[-] Introduced three invertible layers on manifold-valued data whose determinant of Jacobian is simple
                  \item[-] Built the two-stream GLOW that can transfer information from one manifold to another
-                 \item[-] Transferred DTI to corresponding ODF with a small reconstruction error and maintaining verifiable group differences with $p-$value $<0.001$\\ 
-                 In reality, this can save scanning time from $35$ mins to $7-9$ mins
+                 \item[-] Transferred DTI to corresponding ODF with a small reconstruction error and maintaining verifiable group differences with $p-$value $<0.001$
+%                 In reality, this can save scanning time from $35$ mins to $7-9$ mins
+				\item[-] Published paper [2] in AAAI 2021 ($21\%$ acceptance rate)
                  \end{itemize}
 
                  \vspace{-1em}  
@@ -160,6 +165,7 @@
                  \item[-] Applied SPD/ $S^n$ manifold into the Dilated CNN model to extract information from DTI/ ODF
                  \item[-] Sped up the training and testing $5\times$ with a competitive number of parameters with SoTA
                  \item[-] Got statistically significant differences on 5 (out of 18) fiber bundles, by PiB and APOE biomarkers
+                 \item[-] Published paper [4] in ICCV 2019 ($25\%$ acceptance rate), and also [5][7]
                  \end{itemize}
 
                  \vspace{-1em}  
@@ -171,17 +177,18 @@
                  \item[-] Modified the statistical recurrent model on the SPD manifold
                  \item[-] Reduced the number of parameters of the video classification model $100\times$
                  \item[-] Achieved the state of the art of accuracy in UCF11 dataset
+                 \item[-] Published paper [6] in NeurIPS 2018 ($21\%$ acceptance rate)
                  \end{itemize}
 
-                 \vspace{-1em}  
+%                 \vspace{-1em}  
 
-                 \textbf{Correlations for Image-Text Pair in Latent Space} \hfill 09/2017-01/2018
-                \begin{itemize}\itemsep -2.2pt %reduce space between items
-                 \item[-] Applied the pre-trained CNN as the feature extractor from the image side 
-                 \item[-] Applied the word2vec method on the text as the representative of text
-                 \item[-] Used t-SNE to minimize the KL divergence between latent space and the Image-Text pair
-                 \item[-] Got meaningful results on the local dataset gathered from Reddit
-                 \end{itemize}
+%                 \textbf{Correlations for Image-Text Pair in Latent Space} \hfill 09/2017-01/2018
+%                \begin{itemize}\itemsep -2.2pt %reduce space between items
+%                 \item[-] Applied the pre-trained CNN as the feature extractor from the image side 
+%                 \item[-] Applied the word2vec method on the text as the representative of text
+%                 \item[-] Used t-SNE to minimize the KL divergence between latent space and the Image-Text pair
+%                 \item[-] Got meaningful results on the local dataset gathered from Reddit
+%                 \end{itemize}
 
 %                 \textbf{Form Line Detection in the Picture} \hfill 12/2016-06/2017
 %                % Advisor: Prof. Liangrui Peng, Dept. of Electronic Engineering, Tsinghua Univ.
@@ -198,7 +205,7 @@
 
 \vspace{-1em}
 \section{REVIEWER \\ SERVICES}
-                2020: ECCV, MICCAI, NeurIPS,\\ 2021: AAAI, ICLR, CVPR, IJCAI, ICML, ICCV
+                2020: ECCV, MICCAI, NeurIPS,\\ 2021: AAAI, ICLR, CVPR, IJCAI, ICML, MICCAI, ICCV
 
 \end{resume}
 \end{document}
