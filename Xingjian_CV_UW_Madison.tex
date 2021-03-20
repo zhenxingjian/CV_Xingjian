@@ -67,8 +67,9 @@
 \vspace{-1em}
 \section{EDUCATION} 
                 {\bf University of Wisconsin-Madison}, Madison, WI, U.S. \hfill 08/2017-05/2022\\
-                {\sl {Ph.D. Student}}, Department of Computer Science \hfill GPA: 3.85/4.0\\
-                {\bf Advisor:} Prof. Vikas Singh\\
+                {\sl {Ph.D. Candidate}}, Department of Computer Science \hfill GPA: 3.85/4.0\\
+                {Advisor:} Prof. Vikas Singh\\
+                {Doctoral Minor:} Mathematics\\
                 {\bf Tsinghua University}, Beijing, P.R. China. \hfill 08/2013-06/2017\\
                 {\sl {B.E.}}, Department of Electronic Engineering \hfill GPA: 90.9/100
 
@@ -108,10 +109,10 @@
                 \textbf{Mentor:} Karen Hovsepian, and Mingwei Shen
 %                \textbf{Title:} Applied Scientist Intern
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
-                \item[-] Built an end-to-end three-modes model to generate answer, textual explanation, and visual saliency explanation with graph neural network and the noise augmentation to improve the robustness
+                \item[-] Built an end-to-end three-mode model to generate answer, textual explanation, and visual saliency explanation with graph neural network and the noise augmentation based on M4C
                 \item[-] Got $1\%$ better accuracy, $7\%$ better textual explanation CIDEr, $2\%$ better visual explanation IoU
-                 \item[-] Collected a novel TextVQA-X dataset from public available TextVQA with extra textual and visual explanation
-                 \item[-] Wrote the paper [8], which got oral presentation in the inner conference. 
+                 \item[-] Collected a novel TextVQA-X dataset from public available TextVQA with further explanation
+                 \item[-] Wrote paper [8] with oral presentation in the inner conference
                  \end{itemize}
                 
                 \vspace{-1em}  
@@ -124,18 +125,18 @@
                  % \item[-] Research intern in DAMO Academy Medical AI Algorithm Research, Alibaba
                  \item[-] Developed automated anatomical labeling of coronary arteries via CPR-GCN
                  \item[-] Used 3D CNN with BiLSTM to extract the features from the CT images along branches
-                 \item[-] Combined both image domain and position information with the partial-residual connection to achieve $95.8\%$ mean recall, $9\%$ improvement from baseline
+                 \item[-] Combined both image domain and position information with the partial-residual connection over GCN to achieve $95.8\%$ mean recall, $9\%$ improvement from baseline
                  \item[-] Published paper [3] with oral presentation in CVPR 2020 ($5.7\%$ acceptance rate)
                  \end{itemize}
 
 \vspace{-1em}
 \section{RESEARCH \\ EXPERIENCES}
-                \textbf{Certified Robustness Training via Gaussian Distribution}\hfill 01/2020-11/2020
+                \textbf{Certified Robustness Training via Propergating Gaussian Distribution}\hfill 01/2020-11/2020
                 % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
-                 \item[-] Applied the certifiable randomized smoothing robustness without sampling with $2\times$ to $5\times$ faster
+                 \item[-] Applied the certifiable randomized smoothing robustness without sampling with $2\times$ faster
                  \item[-] Proposed a tight estimation of the channel-wise Gaussian distribution to reduce the cost from exponential to linear
-                 \item[-] Achieved $5\%$ better certified accuracy as well as a larger certified radius on ImageNet and Places365
+                 \item[-] Achieved better certified accuracy and $5\%$ larger certified radius on ImageNet and Places365
                  \item[-] Published paper [1] with oral presentation in CVPR 2021 ($4.6\%$ acceptance rate)
                  \end{itemize}
 
@@ -146,7 +147,7 @@
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
                  \item[-] Introduced three invertible layers on manifold-valued data whose determinant of Jacobian is simple
                  \item[-] Built the two-stream GLOW that can transfer information from one manifold to another
-                 \item[-] Transferred DTI to corresponding ODF with a small reconstruction error and maintaining verifiable group differences with $p-$value $<0.001$
+                 \item[-] Transferred DTI to corresponding ODF with a small reconstruction error and maintaining verifiable group difference with $p-$value $<0.001$
 %                 In reality, this can save scanning time from $35$ mins to $7-9$ mins
 				\item[-] Published paper [2] in AAAI 2021 ($21\%$ acceptance rate)
                  \end{itemize}
@@ -160,25 +161,24 @@
 %                 \item[-] Utilized the nearest neighbor in the training dataset to extract local information
 %                 \end{itemize}
 
-                \textbf{Dilated CNN in Group Analysis of Alzheimer's Disease} \hfill 08/2018-02/2021
+                \textbf{Manifold Dilated CNN in Group Analysis of Alzheimer's Disease} \hfill 08/2018-02/2021
                 % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
-                 \item[-] Pre-processed the dMRI to extract the centerline/ average values along fiber bundles
-                 \item[-] Applied SPD/ $S^n$ manifold into the Dilated CNN model to extract information from DTI/ ODF
+                 \item[-] Used TractSeg and Tractometry to compute the average representation along 50 fiber bundles
+                 \item[-] Introduced SPD/ $S^n$ manifold into the Dilated CNN model to extract information from DTI/ ODF
                  \item[-] Sped up the training and testing $5\times$ with a competitive number of parameters with SoTA
-                 \item[-] Got statistically significant differences on 5 (out of 18) fiber bundles, by PiB and APOE biomarkers
+                 \item[-] Got statistically significant difference on 14 and 16 (out of 50) fiber bundles, by PiB-PET and Gene mutation carriers, on DIAN and WRAP dataset, with total 9 fiber bundles in common
                  \item[-] Published paper [4] in ICCV 2019 ($25\%$ acceptance rate), and also extended to [5][7]
                  \end{itemize}
 
                  \vspace{-1em}  
 
-                 \textbf{Statistical Recurrent Model on the Manifold} \hfill 01/2018-05/2018
+                 \textbf{Statistical Recurrent Model on the SPD Manifold} \hfill 01/2018-05/2018
                 % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
-                 \item[-] Defined the ``$+/\ \times$'' operators in the manifold space
-                 \item[-] Modified the statistical recurrent model on the SPD manifold
+                 \item[-] Defined the ``$+/\ \times$'' operators in the manifold space using group operators and wFM
                  \item[-] Reduced the number of parameters of the video classification model $100\times$
-                 \item[-] Achieved the state of the art of accuracy in UCF11 dataset
+                 \item[-] Achieved SoTA accuracy, $78\%$, on UCF11 dataset
                  \item[-] Published paper [6] in NeurIPS 2018 ($21\%$ acceptance rate)
                  \end{itemize}
 
