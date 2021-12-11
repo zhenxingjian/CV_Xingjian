@@ -15,7 +15,9 @@
 \renewcommand{\baselinestretch}{1.2} 
 \usepackage{url}
 \usepackage{enumitem}
+\usepackage{varioref}
 \usepackage{hyperref}
+\usepackage{cleveref}
 \usepackage{xcolor}
 \usepackage{array}
 % \usepackage{setspace}
@@ -66,7 +68,7 @@
                 
 \vspace{-1em}
 \section{EDUCATION} 
-                {\bf University of Wisconsin-Madison}, Madison, WI, U.S. \hfill 08/2017-05/2022\\
+                {\bf University of Wisconsin-Madison}, Madison, WI, U.S. \hfill 08/2017-11/2022\\
                 {\sl {Ph.D. Candidate}}, Department of Computer Science \hfill GPA: 3.85/4.0\\
                 {Advisor:} Prof. Vikas Singh\\
                 {Doctoral Minor:} Mathematics\\
@@ -76,22 +78,25 @@
 \vspace{-1em}                
 \section{PUBLICATIONS}
                 \begin{enumerate}[noitemsep,wide=0pt,leftmargin=\dimexpr\labelwidth + 2\labelsep\relax]\itemsep -0.0pt
+                \item \textbf{[\emph{In Submission}]} ``On the Versatile Uses of Partial Distance Correlation in Deep Learning.''\\
+                            \textbf{Zhen X.}, Meng Z., Chakraborty R., and Singh V.
                 \item \textbf{[\emph{NAACL-MAI-Workshop, 2021}]} ``A First Look: Towards Explainable TextVQA Models via Visual and Textual Explanations.''\\
-                            \textbf{Xingjian Zhen}$^*$, Varun Nagaraj Rao$^*$, Karen Hovsepian, Mingwei Shen.
+                            \textbf{Zhen X.}$^*$, Rao V.N.$^*$, Hovsepian K., and Shen M.
                 \item \textbf{[\emph{AAIC, 2021}]} ``Altered Structural Connectivity Detected with Dilated Convolutional Neural Network Analysis in the DIAN study and the Wisconsin Registry for Alzheimer's Prevention.''\\
-                            \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Nicholas Vogt, Ruochen Wang, Kao Lee Yang, Nagesh Adluru, Brian Gordon, Tammie Benzinger, Nicole Mckay, Tobey Betthauser, Sterling C, Johnson, Vikas Singh, Barbara B. Bendlin.
+                            \textbf{Zhen X.}, Chakraborty R., Vogt N., Wang R., Yang K.L., Adluru N., Gordon B., Benzinger T., Mckay N., Betthauser T., Johnson S.C., Singh V., and Bendlin B.B.
                 \item \textbf{[\emph{CVPR \textcolor{red}{(Oral)}, 2021}]} ``Simpler Certified Radius Maximization by Propagating Covariances.''\\
-                            \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Vikas Singh. 
+                            \textbf{Zhen X.}, Chakraborty R., and Singh V. 
                 \item \textbf{[\emph{AAAI, 2021}]} ``Flow-based Generative Models for Learning Manifold to Manifold Mappings.''\\
-                            \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Liu Yang, Vikas Singh. 
+                            \textbf{Zhen X.}, Chakraborty R., Yang L., and Singh V. 
                 \item \textbf{[\emph{CVPR \textcolor{red}{(Oral)}, 2020}]} ``CPR-GCN: Conditional Partial-Residual Graph Convolutional Network in Automated Anatomical Labeling of Coronary Arteries.''\\
-                            \textbf{Xingjian Zhen}$^*$, Han Yang$^*$, Ying Chi, Lei Zhang, Xian-Sheng Hua.   
+                            \textbf{Zhen X.}$^*$, Yang H.$^*$, Chi Y., Zhang L., and Hua X.S.   
                 \item \textbf{[\emph{ICCV, 2019}]} ``Dilated Convolutional Neural Networks for Sequential Manifold-valued Data.'' \\
-                             \textbf{Xingjian Zhen}$^*$, Rudrasis Chakraborty$^*$, Nicholas Vogt, Barbara B. Bendlin, Vikas Singh. 
+                             \textbf{Zhen X.}$^*$, Chakraborty R.$^*$, Vogt N., Bendlin B.B., and Singh V. 
                 \item \textbf{[\emph{AAIC, 2019}]} ``Sequential Deep Learning Algorithms Show Structural Connectivity Differences By Amyloid Status.''\\
-                             \textbf{Xingjian Zhen}, Rudrasis Chakraborty, Nicholas Vogt, Seong Jae Hwang, Sterling C. Johnson, Barbara B. Bendlin, Vikas Singh. 
+                             \textbf{Zhen X.}, Chakraborty C., Vogt N., Hwang S.J., Johnson S.C., Bendlin B.B., and Singh V. 
                 \item \textbf{[\emph{NeurIPS, 2018}]} ``A Statistical Recurrent Model on the Manifold of Symmetric Positive Definite Matrices.''\\
-                             Rudrasis Chakraborty, \textbf{Xingjian Zhen}$^*$, Chun-Hao Yang$^*$, Monami Banerjee, Derek Archer, David Vaillancourt, Vikas Singh, Baba C. Vemuri.
+                             Chakraborty R., \textbf{Zhen X.}$^*$, Yang C.H.$^*$, Banerjee M., Archer D., Vaillancourt D., Singh V., and Vemuri B.C.
+%                \item 
                 \end{enumerate}
 
 %\vspace{-2em}                
@@ -103,15 +108,15 @@
 %                \end{enumerate}
 
 \vspace{-1em}
-\section{INTERN \\ EXPERIENCE}
+\section{INTERN \\ EXPERIENCES}
 				\textbf{Amazon}, Pasadena, CA, U.S. \hfill 05/2021-08/2021\\
                 {\it Applied Scientist Intern}, AWS Textract\\
                 \textbf{Mentor:} Vijay Mahadevan, Zhuowen Tu, and Qi Dong
 %                \textbf{Title:} Applied Scientist Intern
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
-                \item[-] Introduced transformer based agent method that takes pair-wise input to do the co-detection
-                \item[-] In the small in-house dataset, our method improved 6\% from the current SOTA, while in the entire dataset, the F1 score is 0.5\% better
-                \item[-] In the MS-COCO dataset, our method beats Deformable DETR on small dataset by 4\%
+                \item[-] Introduced transformer-based agent method that takes pair-wise input to do the co-detection
+                \item[-] In the small in-house dataset, our method improved F1 score 6\% from the current SOTA, while in the entire dataset, it is 0.5\% better
+                \item[-] In the MS-COCO dataset, our method beats Deformable DETR on small dataset by 4\% 
                  \end{itemize}
                 
                 \vspace{-1em}
@@ -123,7 +128,7 @@
                 \item[-] Built an end-to-end three-mode model MTXNet to generate answer, textual explanation, and visual saliency explanation, with graph neural network and the noise augmentation based on M4C
                 \item[-] Got $1\%$ better accuracy, $7\%$ better textual explanation CIDEr, $2\%$ better visual explanation IoU
                  \item[-] Collected a novel TextVQA-X dataset from public available TextVQA with further explanation
-                 \item[-] Published paper [1] in NAACL-MAI-Workshop 2021, together with oral presentation internally
+                 \item[-] Published paper [2] in NAACL-MAI-Workshop 2021, together with oral presentation internally
                  \end{itemize}
                 
                 \vspace{-1em}  
@@ -137,18 +142,27 @@
                  \item[-] Developed automated anatomical labeling of coronary arteries via CPR-GCN
                  \item[-] Used 3D CNN with BiLSTM to extract the features from the CT images along branches
                  \item[-] Combined both image domain and position information with the partial-residual connection over GCN to achieve $95.8\%$ mean recall, $9\%$ improvement from baseline
-                 \item[-] Published paper [5] with oral presentation in CVPR 2020 ($5.7\%$ acceptance rate)
+                 \item[-] Published paper [6] with oral presentation in CVPR 2020 ($5.7\%$ acceptance rate)
                  \end{itemize}
 
 \vspace{-1em}
 \section{RESEARCH \\ EXPERIENCES}
-                \textbf{Certified Robustness Training via Propergating Gaussian Distribution}\hfill 01/2020-11/2020
+				\textbf{Partial Distance Correlation (PDC) in Deep Learning and the Benefit}\hfill 12/2020-11/2021
+                % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
+                \begin{itemize}\itemsep -2.2pt %reduce space between items
+                 \item[-] Introduced DC into robustness so that the transferred attack accuracy under PGD drops 9\%
+                 \item[-] Enabled training a network conditioned on another by Partial DC, and analysis ViT over ResNet
+                 \item[-] Used DC to disentangle the latent representation, and generated SOTA manipulate image on FFHD
+                 \end{itemize}
+
+                 \vspace{-1em} 
+                \textbf{Certified Robustness Training via Propagating Gaussian Distribution}\hfill 01/2020-11/2020
                 % Advisor: Prof. Vikas Singh, Dept. of Biostatistics and the Dept. of Computer Sciences at the University of Wisconsin-Madison
                 \begin{itemize}\itemsep -2.2pt %reduce space between items
                  \item[-] Applied the certifiable randomized smoothing robustness without sampling with $2\times$ faster
                  \item[-] Proposed a tight estimation of the channel-wise Gaussian distribution to reduce the cost from exponential to linear
                  \item[-] Achieved better certified accuracy and $5\%$ larger certified radius on ImageNet and Places365
-                 \item[-] Published paper [3] with oral presentation in CVPR 2021 ($4.6\%$ acceptance rate)
+                 \item[-] Published paper [4] with oral presentation in CVPR 2021 ($4.6\%$ acceptance rate)
                  \end{itemize}
 
                  \vspace{-1em}  
@@ -160,7 +174,7 @@
                  \item[-] Built the two-stream GLOW that can transfer information from one manifold to another
                  \item[-] Transferred DTI to corresponding ODF with a small reconstruction error and maintaining verifiable group difference with $p-$value $<0.001$
 %                 In reality, this can save scanning time from $35$ mins to $7-9$ mins
-				\item[-] Published paper [4] in AAAI 2021 ($21\%$ acceptance rate)
+				\item[-] Published paper [5] in AAAI 2021 ($21\%$ acceptance rate)
                  \end{itemize}
 
                  \vspace{-1em}  
@@ -179,7 +193,7 @@
                  \item[-] Introduced SPD/ $S^n$ manifold into the Dilated CNN model to extract information from DTI/ ODF
                  \item[-] Sped up the training and testing $5\times$ with a competitive number of parameters with SoTA
                  \item[-] Got statistically significant difference on 14 and 16 (out of 50) fiber bundles, by PiB-PET and Gene mutation carriers, on DIAN and WRAP dataset, with total 9 fiber bundles in common
-                 \item[-] Published paper [6] in ICCV 2019 ($25\%$ acceptance rate), and also extended to [2][7]
+                 \item[-] Published paper [7] in ICCV 2019 ($25\%$ acceptance rate), and also extended to [3][8]
                  \end{itemize}
 
 %                 \vspace{-1em}  
@@ -211,14 +225,14 @@
 %                 \item[-] Tested in multiple dataset such as the NIST Special Database 2 and got $99.0\%$ accuracy rate
 %                 \end{itemize}
 
-\vspace{-1em}
-\section{COMPUTER \\ SKILLS} 
-                Deep learning framework: PyTorch, TensorFlow, MXNet\\
-                Languages: Python, \LaTeX, Matlab, C++
-
-\vspace{-1em}
-\section{REVIEWER \\ SERVICES}
-                2020: ECCV, MICCAI, NeurIPS,\\ 2021: AAAI, ICLR, CVPR, IJCAI, ICML, MICCAI, ICCV, NeurIPS
+%\vspace{-1em}
+%\section{COMPUTER \\ SKILLS} 
+%                Deep learning framework: PyTorch, TensorFlow, MXNet\\
+%                Languages: Python, \LaTeX, Matlab, C++
+%
+%\vspace{-1em}
+%\section{REVIEWER \\ SERVICES}
+%                2020: ECCV, MICCAI, NeurIPS,\\ 2021: AAAI, ICLR, CVPR, IJCAI, ICML, MICCAI, ICCV, NeurIPS
 
 \end{resume}
 \end{document}
